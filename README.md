@@ -1,3 +1,3 @@
 # HTML_Practice
 Author: Jhansi Kancherla
-Descriptio: HTML Practice including one Website
+Description: HTML Practice including one static Website
