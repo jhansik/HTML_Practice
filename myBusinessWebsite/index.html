@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Business - Home Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+/* CSS for printing */
+@media print {
+    body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: white;
+        color:black;
+    }
+    article {
+color:black;
+}
+
+#main_menu { display: none; }
+#main_header {
+  font-size: 110%;
+  color:indigo;
+  font-weight: bold;
+  margin-top: .7em;
+  margin-bottom: 0;
+  text-align: center;
+  page-break-after: avoid;
+   }
+   #sub_header{
+  font-size: 100%;
+  font-weight: bold;
+  font-style: italic;
+  color:brown;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  text-align: center;
+  page-break-after: avoid; 
+}
+}
+
+/* CSS media queries to create the page for mobile devices */
+
+/* Between 320px and 599px
+-- It's for the iPhone, iPod touch and other Adroid
+-- and mobile phones in portrait mode */
+@media only screen and (min-width: 320px) and (max-width: 599px){
+  #main_menu {
+  	background: gold;
+   text-align: center;
+   margin-top: 10px;
+   	width: auto;
+   	 padding: 1%;
+}
+
+#main_menu li {
+   float: none;
+   display: inline;
+}
+#main_menu li a {
+	display: inline;
+   margin: 0;
+   padding: 0 2em 0.2em 0;
+   line-height: 2em;
+   text-align: center; 
+
+}
+#main_menu li a b {
+	background: cyan; color: #ff0000; font-family: Verdana;font-size: 12pt;
+	 border: 1px solid green;
+}
+a:link {
+    text-decoration: none;
+}
+#main_menu a:visited {
+color: green;
+}
+#main_menu a:hover {
+    color: hotpink;
+}
+#main_aside{display: none;}
+
+}
+
+/* From 600px-767px
+-- It's for larger mobile phones such as HTC models
+-- and iPhone in landscapemode */
+@media only screen and (min-width: 600px)
+and (max-width: 767px)
+
+{
+
+ #main_menu {
+ 	  	background: orange;
+   text-align: center;
+   margin-top: 10px;
+   	width: auto;
+   	 padding: 1%;
+}
+   #main_menu li {
+   display:inline;
+   width: 10%;
+   padding: 1%;
+   border: 1px solid bisque;
+   }
+
+#main_menu li a {
+   margin: 0;
+   padding: 0 0 0.2em 0;
+   line-height: 2.5em;
+   text-align: center;
+    height: 3.8em;
+
+}
+#main_menu li a b {
+	background: bisque;
+	 text-align:center; 
+      color:indigo; font-family: Verdana;font-size: 12pt; 
+       border: 0px;
+}
+a:link {
+    text-decoration: underline;
+}#main_menu a:visited {
+color: blue;
+}
+#main_menu a:hover {
+    color: red;
+}
+#main_aside{display: none;}
+  }
+
+/* 768px and up
+-- This is for desktops, iPads and other tablets */
+@media only screen and (min-width: 768px) {
+	#main_aside {
+width: 220px;
+margin: 20px 0px;
+padding: 20px;
+}
+#main_menu {
+background: #CCCCCC;
+padding: 5px 5px 5px 10px;
+}
+#main_menu li {
+display: inline-block;
+list-style: none;
+font: bold 14px verdana, sans-serif;
+}
+#main_menu li a b {
+background: cornsilk;color: green;
+border: 0px;
+}
+#main_menu li a {
+   margin: 0;
+   padding: 0 1.5em 0.2em 0;
+   line-height: 2.5em;
+   text-align: center;
+    height: 3.8em;
+
+}
+#main_menu a:visited {
+color: #006600
+}
+#main_menu a:hover {
+color: #4a2885
+}
+a:link {
+    text-decoration: underline;
+}
+
+}
+
+
+
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrapper">
+<header id="main_header">
+<h1>MyBusiness - Buyateas <img src="ebuy_logo.png" style="margin: 5px 5px 5px 5px" height="40" align="center"></h1>
+</header>
+<br>
+<nav id="main_menu">
+	<ul>
+<li><a href="index.html"
+title="Home"><b>Home</b></a></li>
+<li><a href="about.html"
+title="About Us"><b>About Us</b></a></li>
+<li><a href="contact.html"
+title="Contact"><b>Contact</b></a></li>
+<li><a href="new.html"
+title="What's New"><b>What's New</b></a></li>
+<li><a href="support.html"
+title="Customer support"><b>Customer support</b></a></li>
+<li><a href="faq.html"
+title="FAQ"><b>FAQ</b></a></li>
+<li><a href="products.html"
+title="Products"><b>Products</b></a></li>
+<li><a href="order.html"
+title="order"><b>Order</b></a></li>
+<li><a href="jobs.html"
+title="Jobs"><b>Jobs</b></a></li>
+<li><a href="multimedia.html"
+title="multimedia"><b>Multimedia</b></a>
+</ul>
+</nav>
+<br>
+<header id="sub_header">
+<h3>MyBusiness - Home Page</h3>
+</header>
+<br>
+<hr width=100% size="5" color="blue" align="center">
+<br>
+
+<div id="container">
+<section id="main_section">
+	
+<article>
+	<b>Sell/Buy anything from below used items by submiting ads for free.</b><br>
+<b>Find great deals on used items in your area.</b> <br>
+	<b style="color:blue">You can scroll down the page to look through the featured items by hovering mouse on below product categories, or use the below search bar to find what you're looking for.</b>
+<br><br>
+	  <label for="keyword"> Search:</label>
+  <input type="search" name="keyword" id="keyword">
+  <input type="submit">
+<br><br>
+<div id="navbar" align="center">
+<ul style="list-style-position: inside; font-style: italic;">
+	<li>
+Mobiles 
+<ul style="font-size:12pt;color:blue;"><li>Mobile Phones</li>
+<li>Tablets</li>
+<li>Accessories</li></ul>
+</li>
+<br>
+<li>Electronics &amp; Appliances
+<ul style="font-size:12pt;color:blue;"><li>Computer &amp; Accessories</li>
+<li>TV</li>
+<li>Cameras &amp; Accessories</li>
+<li>Kitchen Appliances</li></ul>
+</li>
+<br>
+<li>Cars
+<ul style="font-size:12pt;color:blue;"><li>Cars</li>
+<li>Commercial Vehicles</li>
+<li>Spare Parts</li></ul>
+</li>
+<br>
+<li>Bikes
+<ul style="font-size:12pt;color:blue;"><li>Motor Cycles</li>
+<li>Bicycles</li>
+<li>Spare Parts</li></ul>
+
+</li>
+<br>
+<li>Furniture
+<ul style="font-size:12pt;color:blue;"><li>Sofa &amp; Dinning</li>
+<li>Beds</li>
+<li>Home Decor</li></ul>
+</li>
+<br>
+<li>Pets
+<ul style="font-size:12pt;color:blue;"><li>Dogs</li>
+<li>Other Pets</li>
+<li>Accessories</li></ul>
+</li>
+
+<br>
+<li>Books, Sports &amp; Hobbies
+<ul style="font-size:12pt;color:blue;"><li>Books</li>
+<li>Sports Equipment</li>
+<li>Hobbies</li></ul>
+</li>
+<br>
+<li>Fashion
+<ul style="font-size:12pt;color:blue;"><li>Clothes</li>
+<li>Shoe</li>
+<li>Accessories</li></ul>
+</li>
+</ul>
+</div>
+</article>
+</section>
+<aside id="main_aside">
+<p>
+<img src="ebuy_image.jpg" style="margin: 100px 100px 100px 20px; border-width: 3px; border-style:solid; border-color: red;" width="200" height="200" align="center">
+</p>
+</aside>
+</div>
+<hr width=100% size="5" color="blue" align="center">
+<br>
+<footer id="main_footer">
+	<nav id="main_menu">
+	<ul>
+<li><a href="index.html"
+title="Home"><b>Home</b></a></li>
+<li><a href="about.html"
+title="About Us"><b>About Us</b></a></li>
+<li><a href="contact.html"
+title="Contact"><b>Contact</b></a></li>
+<li><a href="new.html"
+title="What's New"><b>What's New</b></a></li>
+<li><a href="support.html"
+title="Customer support"><b>Customer support</b></a></li>
+<li><a href="faq.html"
+title="FAQ"><b>FAQ</b></a></li>
+<li><a href="products.html"
+title="Products"><b>Products</b></a></li>
+<li><a href="order.html"
+title="order"><b>Order</b></a></li>
+<li><a href="jobs.html"
+title="Jobs"><b>Jobs</b></a></li>
+<li><a href="multimedia.html"
+title="multimedia"><b>Multimedia</b></a>
+</ul>
+</nav>
+Copyright © 2016 Jhansi Kancherla
+</footer>
+</div>
+</body>
+</html>

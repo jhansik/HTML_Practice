@@ -1,0 +1,5 @@
+body{background:url(practiceTest-background.jpg); font-family: 'Times New Roman';}
+a:link{background-color: cyan; }
+a:hover{background-color: green; color: red}
+h1{text-align:center; color: pink; font-family: Arial; font-size: 200%;}
+

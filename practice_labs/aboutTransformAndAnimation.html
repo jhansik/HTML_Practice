@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lab19 - CSS3 Transforms and animation</title>
+<meta charset="utf-8">
+
+<style type="text/css">
+
+	body {
+		width:100%;
+		font: 1em Arial;
+	}
+	h2 {
+			width: 800px;
+			height: 50px;
+			text-align:center;
+			color:saddlebrown;
+			text-transform: uppercase;
+			background: -webkit-linear-gradient(transparent 49%, yellow 49%, transparent 50%) lemonchiffon;
+			margin: 0 auto;
+			-webkit-animation: spin_header 7s infinite linear;
+		}
+
+		 @-webkit-keyframes spin_header {
+
+				80% {
+					-webkit-transform: skew(180deg);
+				}
+			}
+
+			h3{
+				font: bold 2.5em Arial;
+			margin: 25px 0 0;
+			text-align: center;
+			-webkit-transform: rotate(-5deg) translate(-100px, 0px);
+			}
+
+
+		
+
+	.order_container {
+		margin:30px auto 0;
+		width:700px;
+		height:100px;
+		border:2px dashed #ccc;
+		position:relative;
+	}
+
+	.order_box {
+		width:200px;
+		height:40px;
+		background:blue;
+		position:absolute;
+		text-align:center;
+		top:0;
+		left:0;
+		-webkit-animation: corners 10s infinite;
+		animation-name: corners;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+
+@-webkit-keyframes corners {
+
+		25% {
+			top:60px;
+			left:0;
+			background:red;
+		}
+
+		50% {
+			top:60px;
+			left:500px;
+			background:cyan;
+		}
+
+		75% {
+			top:0;
+			left:500px;
+			background:yellow;
+		}
+
+	}
+
+
+	.order_box:hover {
+		-webkit-animation-play-state:paused;
+		animation-play-state:paused;
+	}
+
+
+body > #section_differences {
+			width: 800px;
+			margin: 50px auto 0;
+			padding-top:550px;
+		}
+
+			#article_differences {
+				width: 800px;
+				margin: 20px;
+				float: left;
+			}
+
+				#article_differences div {
+					width: 370px;
+					height: 120px;
+					background: #ccc;
+					float: left;
+					margin: 0 5px 5px 0;
+					text-align: center;
+					padding: 10px;
+					font-size: 10pt;
+				}
+
+				#section_differences label {
+					cursor: pointer;
+					border-radius: 50%;
+					padding: 10px;
+					margin-left: 40px;
+					background: plum;
+					width: 15px;
+					height: 15px;
+					text-align: center;
+					float:left;
+					margin-right: 50px;
+				}
+
+				#section_differences label:hover {
+					background: #eee;
+				}
+
+				#section_differences input {
+					position: absolute;
+					left: -9999px;
+				}
+
+				#section_differences input:checked + label {
+					font-weight: bold;
+				}
+
+				#section_differences input:checked ~ ol li {
+					opacity:0.3;
+					-webkit-t ransform: scale(0.7);
+				}
+
+				 #section_differences input:checked ~ article div {
+					-webkit-transform-origin: 0 0;
+				}
+
+				#section_differences input[value="1"]:checked ~ article div:first-child {
+					-webkit-transform: translate(180px, 100px) scale(1.13);
+					background: pink;
+				}
+
+				#section_differences input[value="2"]:checked ~ article div:nth-child(2) {
+					-webkit-transform: translate(-180px, 100px) scale(1.13);
+					background: gold;
+				}
+
+				#section_differences input[value="3"]:checked ~ article div:nth-child(3) {
+					-webkit-transform: translate(180px, -60px) scale(1.13);
+					background: pink;
+				}
+
+				#section_differences input[value="4"]:checked ~ article div:nth-child(4) {
+					-webkit-transform: translate(-180px, -60px) scale(1.13);
+					background: gold;
+				}
+
+				#section_differences input[value="5"]:checked ~ article div:nth-child(5) {
+					-webkit-transform: translate(180px, -170px) scale(1.13);
+					background: pink;
+				}
+
+				#section_differences input[value="6"]:checked ~ article div:last-child {
+					-webkit-transform: translate(-180px, -170px) scale(1.13);
+					background: gold;
+				}
+
+
+#section_differences h4 {
+width:500px;
+height:30px;
+border:2px dotted blue;
+border-radius:20%;
+background:red;
+padding: 20px;
+text-align: center;
+font-weight: bolder;
+position:relative;
+}
+				#section_differences h4:hover {
+animation:corners 5s;
+animation-iteration-count:3;
+animation-direction:alternate;
+animation-play-state:running;
+-webkit-animation:corners1 5s; /* Safari and Chrome */
+-webkit-animation-iteration-count:3;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+}
+
+@keyframes corners1 {
+0% {background:lime; left:0px; top:0px;}
+25% {background:pink; left:250px; top:0px;}
+100% {background:lime; left:0px; top:0px;}
+}
+
+@-webkit-keyframes corners1 {
+0% {background:lime; left:0px; top:0px;}
+25% {background:pink; left:250px; top:0px;}
+100% {background:lime; left:0px; top:0px;}
+}
+
+
+#section_differences p{
+width: 800px;
+			height: 110px;
+			float: left;
+			margin: 20px;
+		 }
+
+			#section_differences p:hover {
+			-webkit-transform: skewX(10deg) skewY(10deg);
+			background: -webkit-linear-gradient(left, transparent 49%, black 49%, transparent 40%),
+			            -webkit-linear-gradient(transparent 49%, black 49%, transparent 50%), aquamarine;
+			            color: maroon;
+		}
+
+
+
+	body > #section_order {
+			width: 800px;
+			margin: 0 auto;
+	}
+
+	#article_order {
+				width: 800px;
+				margin-top: 50px;
+				float: left;
+				position: relative;
+	}
+
+	#article_order #div1 {
+					width: 380px;
+					height: 200px;
+					background: #ccc;
+					float: left;
+					margin: 0 5px 5px 0;
+					text-align: center;
+					padding-top: 30px;
+	}
+	#article_order #div2 {
+					width: 380px;
+					height: 120px;
+					background: #ccc;
+					float: left;
+					margin: 0 5px 5px 0;
+					text-align: center;
+					padding-top: 30px;
+	}
+	#article_order #div3 {
+					width: 760px;
+					height: 100px;
+					background: #ccc;
+					float: left;
+					margin: 0 5px 5px 0;
+					text-align: center;
+					padding-top: 30px;
+	}
+
+	#article_order #div1:hover {
+				    width: 500px;
+				    height: 180px;
+				    background: steelblue;
+				    color: #fff;
+				    margin-left: 60px;
+	}
+	#article_order div:hover {
+				    -webkit-transform: scale(1.4);
+	}
+		#article_order #div2:hover {
+				    width: 500px;
+				    height: 100px;
+				  margin-left: 60px;
+				    background: fuchsia;
+				    color: #fff;
+	}
+	
+		#article_order #div3:hover {
+				    width: 500px;
+				    height: 110px;
+				    background: orange;
+				    color: #fff;
+				    margin-left: 60px;
+	}
+
+
+</style>
+</head>
+<body>
+
+
+<header>
+      <h2> Lab19 - CSS3 Transforms and animation </h2>
+<h3> Research on sushi</h3>
+</header>
+
+
+<section class="order_container">
+   <article class="order_box">How to order Sushi?</article>
+</section>
+<section id="section_order">
+
+		<article id="article_order">
+		    <div id="div1">Start with rolls — the most familiar form of sushi for most Americans, and called maki in Japanese. Maki usually consist of a filling (fish, vegetables, or a combination of the two) and sushi rice, all rolled up in dried seaweed (called nori) and then cut into six to eight pieces. Sometimes the rolls are “inside out” — with rice on the outside, nori in the middle, and the fish and/or veggies still in the heart of the roll — and these are called uramaki. You might also see temaki, which is essentially a big cone of dried seaweed filled with rice, fish, and/or vegetables.</div>
+		    <div id="div1">If you’re still uneasy about raw fish, get used to rolls before diving into the delicious world of nigiri. Here, a little mound of sushi rice is crowned with a slice of fish, usually with a dab of wasabi in between. Proper sushi etiquette calls for nigiri to be eaten by hand, and the fish side only to be dipped into soy sauce (the rice should be kept just as the chef prepared it). </div>
+		    <div id="div2">Sashimi is the rare sushi dish that doesn’t include rice. Simple and straightforward, sashimi is thin slices of raw fish eaten with chopsticks. If you do like raw fish, this is the absolute best way to fully experience the often creamy texture and clear flavors of high-quality tuna, salmon, and other kinds of fish.</div>
+		    <div id="div2">Chirashi is essentially sushi salad. Sushi rice, topped with sashimi and vegetables, in a decent-sized bowl — oftentimes, this is a wonderful way to try a few different kinds of fish, while being able to build your own bite if you don’t necessarily want a mouthful of straight fish.</div>
+		    <div id="div3">Those are the basic types of sushi you’ll encounter on most menus. Start out with more familiar ingredients, like spicy tuna rolls, salmon nigiri, or sashimi. If you’re still wary about raw fish, most of the time eel (called unagi) and shrimp (called ebi) will be cooked, so look for rolls containing those. Specialty rolls (items like rainbow rolls, dragon rolls, etc.) are usually topped with slices of raw fish, like nigiri.</div>
+		</article>
+
+	</section>
+
+<section id="section_differences">
+
+	<h4> The ways that grocery store sushi is different from serious sushi</h4>
+	<p>Today, much of what Americans eat comes prepackaged off of a grocery store shelf. Store-bought sushi can range widely in quality (some is actually legit!), but even the best-intentioned grocers aren't going to be able to recreate the sushi bar experience.
+		<br><br>
+		Click on below radio button to view the differences</p>
+<form>
+		<input id="one" name="transforms" type="radio" value="1">
+        <label for="one">1</label>
+
+		<input id="two" name="transforms" type="radio" value="2">
+        <label for="two">2</label>
+
+        <input id="three" name="transforms" type="radio" value="3">
+        <label for="three">3</label>
+
+        <input id="four" name="transforms" type="radio" value="4">
+        <label for="four">4</label>
+
+        <input id="five" name="transforms" type="radio" value="5">
+        <label for="five">5</label>
+
+        <input id="six" name="transforms" type="radio" value="6">
+        <label for="six">6</label>
+
+		<article id="article_differences">
+		    <div id="div_differences">The rice is too mushy or too dry<br>
+The rice is likely cooked with too much water, leading to an initial texture more akin to baby food. But after a few hours in a cold case, that roll will be dry as a bone.</div>
+		    <div>Rice temperature is wrong and not packed right<br>
+Sushi rice should be served close to body temperature and kept slightly warm until being served. That's not happening in a grocery store. The chef makes a decision with each piece of sushi as to how tight to pack the rice. Generally it's so loose that it'll be falling apart by the time it reaches your mouth, but with cheaper sushi that level of care isn't taken.</div>
+		    <div>
+Grocery store sushi is oxidized<br>
+The point of cutting sushi just before serving is that meat oxidizes when exposed to air, and the flavor deflates. No amount of loosely fitting plastic cover can keep that fish from turning sour once it's been cut.
+</div>
+		    <div>Raw fish loses flavor when chilled<br>
+Once a sushi chef's hands have cut and formed the fish over rice, the fish has been slightly warmed. Those few moments of handling greatly increase the flavor, a personal touch that your grocery case cannot provide.</div>
+		    <div>The fish is coming from bigger suppliers<br>
+High-end sushi bars will have very intimate relationships with their suppliers, who are only selling the best of the best. Grocery stores are still getting quality fish, but it's not as meticulously graded on taste and texture.
+</div>
+		    <div>The freezing technology is different<br>
+Most fish used in sushi these days is frozen at some point between the ocean and your mouth, but the technology varies widely. A well-frozen fish is dipped in liquid nitrogen and hits negative 65 degrees instantly, leaving the flesh and muscles perfectly intact. However, cheaper methods of freezing will lead to water crystallization that is going to degrade the overall flavor.</div>
+		</article>
+</form>
+</section>
+
+
+<aside style="float:right"><p> <b>Researched about sushi. How to order? What are the ways that grocery store sushi is different from serious sushi?and did the following:</b> <br>
+	
+
+Use tranform.<br>
+Use animation.</p></aside>
+</body>
+</html>

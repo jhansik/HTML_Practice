@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lab18 - CSS Transitions</title>
+<meta charset="utf-8">
+<style>
+body{
+	width:100%;
+	background: lavenderblush;
+}
+h2{
+	padding: 5px 10px;
+background: blue;
+-webkit-transition-property: background;
+-webkit-transition-duration: 0.5s;
+-webkit-transition-timing-function: ease-out;
+text-align: center;
+margin: 10px;
+}
+
+h2:hover {
+background: orange;
+border-radius: 70% }
+
+h3{
+	padding: 5px 10px;
+color: darkcyan;
+-webkit-transition-property: color;
+-webkit-transition-duration: 0.5s;
+-webkit-transition-timing-function: ease-in-out;
+text-align: center;
+margin: 10px;
+text-align: center;
+}
+
+h3:hover {
+color: orange;
+border-radius: 20% ;
+font-size: 20pt;
+}
+
+#symptoms-container {
+display: -webkit-flex;
+display: flex;
+background-color: Silver;
+}
+#about{
+	padding: 5px 10px;
+	margin: 10px;
+background: #d5eae9;
+font-size: 12pt;
+-webkit-transition: background 0.5s ease;
+-moz-transition: background 0.5s ease;
+-o-transition: background 0.5s ease;
+transition: background 0.5s ease;
+width:90%;
+}
+#about:hover,
+#about:focus {
+background: peachpuff;
+}
+#symptoms {
+background-color: lime;
+transition-property: background, border-radius;
+-webkit-transition-property: background, border-radius;
+transition-duration: 2s, 6s;
+-webkit-transition-duration: 2s, 6s;
+transition-timing-function: linear;
+-webkit-transition-timing-function: linear;
+margin: 20px;
+padding:10px;
+text-align: center;
+width:50%;
+}
+#symptoms:hover {
+background: red;
+border-radius: 70%
+}
+#causes {
+background-color: darkcyan;
+margin:10px;
+transition-property: background, color,margin;
+transition-duration: 3s, 3s;
+-webkit-transition-duration: 3s, 3s;
+-webkit-transition-property: background, color, margin;
+transition-timing-function: ease-in;
+-webkit-transition-timing-function: ease-in;
+margin: 20px;
+padding: 10px;
+}
+#causes:hover {
+background: pink;
+color:green;
+margin:40px;
+}
+
+#medical{
+	color: gray;
+font-size: 10pt;
+-webkit-transition-property: color,font-size;
+-webkit-transition-duration: 0.5s;
+-webkit-transition-timing-function: linear;
+-webkit-transition-delay: 1s;
+margin: 20px;
+}
+#medical:hover{
+color:red;
+font-size: 12pt;
+}
+
+#help{
+	background: khaki;
+font-size: 12pt;
+-webkit-transition: all 0.5s ease 1s;
+-moz-transition: all 0.5s ease 1s;
+-o-transition: all 0.5s ease 1s;
+transition: all 0.5s ease 1s;
+padding: 20px;
+}
+#help:hover{
+	color: chocolate;
+background: lemonchiffon;
+font-size: 16pt;
+}
+#news{
+padding: 5px 10px;
+background: #d5eae9;
+font-size: 12pt;
+text-align:center;
+-webkit-transition: background,color 0.5s ease 1s;
+}
+#news:hover {
+background: brown;
+color:white;
+}
+
+</style>
+</head>
+<body>
+	<header>
+      <h2> Lab18 - CSS Transition</h2>
+<h3> Investigation report on Internet addiction</h3>
+</header>
+	<div id="about" align="center">The Internet has made life a lot easier by making information more accessible to all and creating connections with different people around the world. However, it has also led a lot of people to spend too much time in front of the computer, so much so that it becomes the center of their lives. This can lead to an Internet or computer addiction. <br><br>
+	Data on IA(Internet addiction) rates from 31 countries in seven regions were reviewed and an overall prevalence rate for IA of 6% was determined, with the highest rates seen in the Middle East (10.9%), North America (8.0%), and Asia (7.1%). IA rates were more likely to be greater in nations with a lower Life Satisfaction Index, higher Pollution Index, higher Traffic Commute Time Index, and lower GDP per capita. </div>
+	<h3>Signs of Internet Addition</h3>
+<div id = "symptoms-container">
+<div id = "symptoms"><b>Psychological Symptoms</b><br>
+Losing track of time spent online<br>
+Experiencing difficulty completing tasks at home or work<br>
+Isolation from friends and family<br>
+Feeling defensive or guilty about Internet usage<br>
+Experiencing a sense of euphoria when involved in online activities<br></div>
+<div id = "symptoms"><b>Physical Symptoms</b><br>
+Strained vision<br>
+Sleep problems<br>
+Carpal tunnel syndrome<br>
+Significant weight loss or weight gain<br>
+Severe headaches</div>
+</div>
+<h3>Causes Internet Addictions</h3>
+<div id="causes">
+Whenever Internet addicts feel overwhelmed, stressed, depressed, lonely or anxious, they use the Internet to seek solace and escape. Studies from the University of Iowa show that Internet addiction is quite common among males ages 20 to 30 years old who are suffering from depression.<br>
+
+Certain people are predisposed to having a computer or Internet addiction, such as those who suffer from anxiety and depression. Their lack of emotional support means they turn to the Internet to fill this need. There are also those who have a history of other types of addiction, such as addictions to alcohol, drugs, sex and gambling. Even being stressed and unhappy can contribute greatly to the development of a computer or Internet addiction. People who are overly shy and cannot easily relate to their peers are also at a higher risk of developing a computer or Internet addiction.
+</div>
+<h3>Medical disorder associated with Internet Addictions</h3>
+<div id="medical">While Internet addiction (IA) is not currently recognized in the DSM-5, new research suggests that as many as 6% of individuals worldwide could be suffering from this disorder. Neural abnormalities and cognitive dysfunctions associated with IA appear to be similar to those related to substance and behavioral addiction; it is often comorbid with mental disorders including attention deficit hyperactivity disorder (ADHD) and depression. 
+
+</div>
+<h3>Steps to Help Someone With a Computer or Internet Addiction</h3>
+<div id="help">
+Introduce the Internet addict to other people who handle their use of the Internet reasonably.<br>
+Serve as a good role model for the Internet addict by properly managing your own use of computers and the Internet.<br>
+Support a person’s desire for change if it appears that he or she is an Internet addict.<br>
+Talk to the person about your concerns that he or she may be an Internet addict.<br>
+Get the person involved in interests that aren’t related to the Internet.<br>
+Encourage an Internet addict to seek professional counseling.<br>
+</div>
+<h3>News related to Internet Addiction</h3>
+<div id="news"><b>Teen battling Internet addiction cuts off own hand</b> - Newser 11:45 a.m. EST February 4, 2015<br>
+(NEWSER) – About 14% of China's youths may be addicted to the Internet, says a psychologist; he runs a rehab center, or "boot camp," that takes a tough approach to the weaning process, the Telegraph reports (a New York Timesvideo makes the place look like a prison). Others, however, take action on their own. Witness the case of teen known only as "Little Wang," who, in an effort to end his addiction, cut his left hand off. The 19-year-old called a taxi to take him to the hospital last week, leaving a note telling his mother he'd be back soon. He left the hand behind on the nearby bench where he cut it off, the Telegraph notes, but the hospital was able to reattach it. Still, he may not regain full control of it, surgeons say. "We cannot accept what has happened. It was completely out of the blue. He was a smart boy," says his mother.<br>
+
+A teacher says the boy's Internet habit made him "impetuous." China is one of several countries grappling with what the Telegraph calls an addiction "epidemic"; in China, it's known as wangyin, the New Yorker reported last year. Taiwan has established fining systems for parents who let their kids spend too much time on their computers. Japan, like China, has addiction-fighting camps; China now has some 250 of them, Kotaku reported last year. China sees such addiction as a clinical disorder that's among the top dangers to young people, though there may be a political side to that, the New Yorker noted, given that the government is concerned about people organizing online. (Japan has grappled with another mysterious psychological phenomenon: young people who can't leave their houses.)</div>
+
+
+
+<aside style="float:right"><p> <b>	Investigate Facebook addiction or Internet addiction. How common is it? What are some of the warning signs? Is there an actual medical disorder associated with it? If so, what is it and how is it treated? Find one example in a news or journal article of a person who was "addicted" to using a social networking site or other online activity - why was their behavior considered addictive? Were they able to modify their behavior? Have you ever been concerned about becoming addicted to any Internet activites?<br>
+</b> <br>
+	Used transition.</p></aside>
+
+</body>
+</html>

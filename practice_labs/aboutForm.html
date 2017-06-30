@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Lab13- Form</title>
+  	<meta charset="utf-8">
+</head>
+<body>
+<header>
+<h2 style="text-align:center;"> Registration Form</h2>
+</header>
+<section>
+<form>
+	<fieldset>
+		<legend align="center"> Provide Below Details for Registration</legend>
+		<label for="Name">Enter your Name: </label>
+  <input type="text" name="Name" id="Name"><br><br>
+
+  <label for="Address">Enter your Address: </label>
+  <input type=text name="Address" size=35 maxlength=120 id="Address"><br><br>
+
+   <label for="Email">Enter Your Email:</label>
+  <input type="email" name="Email" id="Email"><br><br>
+
+<label for="Phone">Enter Your Phone:</label>
+  <input type="tel" name="Phone" id="Phone"><br><br>
+
+<label for="Website">Enter Your Website:</label>
+  <input type="url" name="Website" id="Website"><br><br>
+
+<label for="Color"> Choose a color:</label>
+  <input type="color" name="Color" id="Color"><br><br>
+
+  <label for="Gender"> Choose Your Gender:</label>
+  <input type="text" name="Gender" id="Gender" list="genders">
+  	<datalist id="genders">
+  		<option value="Male">
+  		<option value="Female">
+  	</datalist>
+<br><br>
+
+  	 <label for="MaritalStatus"> Choose Your Marital Status:</label>
+  <input type="text" name="MaritalStatus" id="MaritalStatus" list="maritalStatus">
+  	<datalist id="maritalStatus">
+  		<option value="Single">
+  		<option value="Married">
+  		<option value="Divorced">
+  		<option value="Widowed">
+  	</datalist>
+<br><br>
+
+ <label for="Date"> Choose a date:</label>
+  <input type="date" name="Date" id="Date"><br><br>
+
+<label for="Comment"> Enter Your Comments:</label>
+<textarea name="Comment" id="Comment" cols=35 row=5 wrap=physical>Enter comments</textarea><br>
+
+  	</fieldset>
+<br><br>
+<input type="submit" name="SubmitButton" value="Submit">
+<input type="reset" name="ResetButton" value="Reset">
+</form>
+</section>
+
+
+<aside style="float:right"><p> <b>  Create a registration form using the HTML5 form controls and did the following:</b> <br>
+
+
+Use the header tag to display the heading for the form.<br>
+Use the section tag to include the form (use label and fieldset):<br>
+Name<br>
+Address<br>
+Email<br>
+Phone<br>
+Website<br>
+color<br>
+datalist<br>
+Calendar<br>
+Comments (use multi-line input)<br>
+Submit and Reset buttons</p></aside>
+	</body>
+</html>

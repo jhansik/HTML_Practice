@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lab15- Flex Box Model</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styleflex.css">
+</head>
+<body>
+
+	<header>
+		<h2 style="text-align:center;color:green"> Lab15- Flex Box Model</h2>
+<h2 style="text-align:center; color:blue"> The Revenant</h2>
+</header>
+<!-- parent container -->
+<section  style="padding: 0; margin: 0; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; background: #ccf;
+-moz-flex-direction: column;-webkit-flex-direction: column; flex-direction: column; -webkit-flex-flow: row wrap; justify-content: space-around; align-items: center;
+ align-content: stretch; ">
+
+<!-- Flex Item 1 -->
+  <div style="background: tomato; padding: 5px; margin-top: 10px; -moz-flex: 1; -webkit-flex: 1; flex: 1; line-height: 20px; color: white; font-size: 14pt; text-align: center; border: 3px solid green;">
+  <h3>About Movie</h3>
+  <b>Genre:</b>	Drama, Action & Adventure <br> 
+  <b>Directed By:</b>Alejandro González Iñárritu   <br>
+  <b> Written By:</b>	Mark L. Smith, Alejandro González Iñárritu  <br>
+  <b> Stars:</b> Leonardo DiCaprio, Tom Hardy, Will Poulter <br>
+  <b>Year Released:</b> 2015
+</div>
+
+<!-- Flex Item 2 -->
+   <div style="-moz-flex: 1; -webkit-flex: 1; flex: 1; background: #eec; color: saddlebrown; margin: 5px; border: 2px solid red;"><h3>Movie Info</h3>
+Inspired by true events, THE REVENANT is an immersive and visceral cinematic experience capturing one man's epic adventure of survival and the extraordinary power of the human spirit. In an expedition of the uncharted American wilderness, legendary explorer Hugh Glass (Leonardo DiCaprio) is brutally attacked by a bear and left for dead by members of his own hunting team. In a quest to survive, Glass endures unimaginable grief as well as the betrayal of his confidant John Fitzgerald (Tom Hardy). Guided by sheer will and the love of his family, Glass must navigate a vicious winter in a relentless pursuit to live and find redemption. THE REVENANT is directed and co-written by renowned filmmaker, Academy Award (R) winner Alejandro G. Iñárritu (Birdman, Babel). (C) Fox</div>
+
+<!-- Flex Item 3 -->
+   <div style="-moz-flex: 1; -webkit-flex: 1; flex: 1; background: seagreen; color:deepskyblue; font-size: 12pt; text-align: center;"><h3> Reviews</h3>
+<ul style="text-align:left;"><li>82% - Rotten Tomatoes
+<ul><li>Tomatometer   - 82%</li>
+<li>Audience Score - 85%
+</li></ul></li>
+<li>8.2/10 - IMDb<ul><li> 
+Reviews based on 935 user | 486 critic ratings
+ </li>
+</ul></li>
+<li>76% -  Metacritic<ul><li>Metascore - 76 <br>
+Generally favorable reviews based on 50 Critics</li>
+<li>User Score - 8.0<br>
+Generally favorable reviews based on 1057 Ratings</li></ul> </li></ul></div>
+  
+</section>
+
+<aside style="float:right"><p> <b>Selected a movie, created a flex box model with 3 flex items using the following:</b> <br>
+  
+the parent container has:<br>
+flex direction: column<br>
+justify content: space around<br>
+align item: center<br>
+align content: stretch<br>
+the flex item has:<br>
+flex grow: 1</p></aside>
+</body>
+</html>
+
+
+

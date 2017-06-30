@@ -1,0 +1,122 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+h1 {
+font: bold 20px verdana, sans-serif;
+}
+h2 {
+font: bold 14px verdana, sans-serif;
+}
+header, section, footer, aside, nav, article, figure, figcaption, hgroup{
+display: block;
+}
+body { background-color:  yellow; color: green; font-family: 'Times New Roman'; font-size: 14pt; font-style: italic; font-weight: 300;
+width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+#wrapper{
+max-width: 960px;
+margin: 15px 0px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -moz-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+}
+#main_header {
+border: 1px solid #999999;
+padding: 20px;
+background-color: green; text-align:center; color: pink; border-radius: 10px; margin: 10px; padding: 10px; text-shadow: 2px 2px 2px red;
+ box-shadow: rgb(255,0,0) 5px 5px 5px; background-image: -webkit-gradient( linear, left top, left bottom, from( #FFFFFF) , to( #008000) ); 
+ background-image: -moz-linear-gradient( top, #FFFFFF, #008000) ; filter: progid: DXImageTransform. Microsoft. gradient ( startColorstr=#FFFFFFFF, endColorstr=#FF008000) ;
+  background-image: linear-gradient( #FFFFFF, #008000) ; border: 1px solid limegreen;
+}
+#sub_header{
+  text-align: center; color:rgba(100%, 0%, 0%, 0.8); text-shadow: 2px 1px 1px blue;
+}
+
+#container {
+  margin: 10px; padding: 10px; 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -moz-flex-direction: row;
+  -webkit-flex-direction: row;
+}
+#main_section {
+  text-align: center;
+  -moz-flex: 1;
+  -webkit-flex: 1;
+  margin: 20px 20px 20px 0px;
+width:100%
+}
+
+#main_footer {
+text-align: center;
+}
+article {
+background: #FFFBCC;
+border: 1px solid #999999;
+padding: 20px;
+margin-bottom: 15px;
+}
+
+figcaption {
+font: italic 14px verdana, sans-serif;
+}
+#navbar, #navbar ul {display:block; margin:0; padding:0; list-style:none;}
+#navbar li ul {display:none}
+#navbar li:hover ul{display:block; width:10.1em;}
+#navbar li ul li { width: auto;}
+
+article p {
+      color: darkmagenta;
+      font-size: 1em;
+      line-height: 1.5;
+      margin: .875em 2em;
+      }
+article p:first-of-type::first-letter {
+      color: red;
+      font-size: 2em;
+      float: center;
+      margin: -.25em .05em 0 0; }
+
+article dt:first-of-type::first-line {
+      color: orange;
+  }
+
+ dl li:nth-of-type(2) { color: maroon ;font-weight: bolder; border-bottom: 1px  solid violet;}
+
+ article li:nth-of-type(even) { background-color: #F3F3F3; color: coral ;font-weight: bolder;}
+
+ article li:nth-of-type(odd) { background-color: #ddd; color: midnightblue ;}
+
+li li:nth-of-type(even) { background-color: aqua ; color: green ;}
+li li:nth-of-type(odd) { background-color: darkseagreen ; color: mediumvioletred ;font-weight: bolder;}
+
+article blockquote:nth-of-type(odd) { background-color: #ddd; color: midnightblue ;}
+article blockquote:nth-of-type(even) { background-color: #F3F3F3; color: red ;}
+
+ #productsTable tr:nth-of-type(even){
+color: sienna;
+}
+ #productsTable tr:nth-of-type(odd){
+color:teal;
+}
+
+

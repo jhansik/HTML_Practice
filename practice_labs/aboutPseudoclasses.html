@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Lab16- Pseudoclasses</title>
+<meta charset="utf-8">
+<style type="text/css">
+
+section h3 {
+   text-align: center;
+   color: orange;
+}
+   #athlete1 p {
+      color: darkmagenta;
+      font-size: 1em;
+      line-height: 1.5;
+      margin: .875em 2em;
+      }
+   #athlete1 p:first-of-type::first-letter {
+      color: red;
+      font-size: 2em;
+      float: left;
+      margin: -.25em .05em 0 0; }
+   #athlete1 p:nth-child(2)  { background: lightblue; }
+
+    #athlete2 ul:first-of-type::first-line {
+      color: forestgreen;
+   }
+   #athlete2 li:last-child { border-bottom: 1px  solid violet;font-size: 1.5em; }
+
+  #athlete2 li:nth-of-type(3) { color: maroon ;font-weight: bolder; }
+
+</style>
+</head>
+
+   <header>
+      <h2 style="text-align:center;color:green"> Lab16- Pseudoclasses</h2>
+<h2 style="text-align:center; color:blue"> 2014 Sochi Winter Olympics Games - 2 Athletes</h2>
+</header>
+<body>
+<section>
+   <!-- First athlete -->
+   <h3>Ireen Wuest (NED) - Speed Skating</h3>
+<article id="athlete1">
+<p>
+Two gold medals, three silver in five events entered in the 2014 Winter Olympics held in Sochi, Russia.
+</p>
+<p>
+She is the most successful athlete of the Netherlands at the Winter Olympics. She is also a five-time world allround champion, a nine-time world single distance champion, and a four-time European allround champion. In 2014 she was elected by Reuters as the Sportswoman of the World.</p>
+<p>
+At the age of 19, on 12 February 2006, Wüst won the gold medal in the 2006 Winter Olympic Games 3000-meter event. She is the youngest Dutch Olympic champion in Winter Games history. Four years later in the 2010 Winter Olympic Games she won the 1500-meter event. In the 2014 Winter Olympic Games she won 2 gold and 3 silver medals. No nation was as dominant in an individual sport as the Dutch speed skaters. It was a team effort, but if one person must be singled out, make it Wuest. She won her second Olympic title in the 3000m and helped the Netherlands to its first Olympic medal in the women’s team pursuit, a gold. She also collected silvers in the 1000m, 1500m and 5000m, displaying the talent that’s made her the three-time reigning World Allround champion in the 2014 Winter Olympics.
+</p>
+</article>
+
+<!-- Second athlete -->
+<h3>Viktor Ahn (RUS) - Short Track Speed Skating</h3>
+<article id="athlete2">
+<ul>
+   <li>Ahn was one of the leading international stories going into the Games. He had won three golds and one bronze while skating for South Korea as Ahn Hyun-Soo at the 2006 Olympics</li>
+   <li>He has also won three gold medals and one bronze medal in the 2014 Winter Olympics held in Sochi, Russia.</li>
+   <li>Ahn did not qualify for the 2010 Olympics, and subsequent fallout with the Korea Skating Union led him to acquire Russian citizenship.</li>
+   <li>He flourished with his new nation in Sochi, astonishingly bettering his 2006 Olympic medal haul. Ahn was .077 away from becoming the first person to sweep all four short track golds.</li>
+   <li>He became the most decorated Olympic short track skater of all time, matching Apolo Ohno in medals but with more golds.</li>
+   <li>South Korean fans were irate over his success, especially compared with the South Korean men’s failure to win a medal.</li>
+   <li>Ahn, 28, is considering the 2018 Olympics, which are in Pyeongchang, South Korea</li>
+</ul>
+</article>
+</section>
+
+
+<aside style="float:right"><p> <b>   Used HTML5 and CSS3. Selected two athletes at the 2014 Sochi Winter Olympics Games and did the following:</b> <br>
+
+
+Write about the first athlete. The fist letter is double size with a different color. The second child has a background color.<br>
+List the facts about the second athlete. Make the first line a different color. The last child has a different size and a bottom border. <br>
+The 3rd of type has a different color and bold.</p></aside>
+</body>
+</html>

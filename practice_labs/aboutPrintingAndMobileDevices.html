@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lab17 - Print Media and Mobile Devices</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+/* CSS for printing and making links printable */
+@media print {
+    body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: white;
+    }
+    p {
+   color:black;
+   font-size: 12pt;
+}
+a:after{
+  content:" (" attr(href) ") ";
+  font-size:1em;
+  font-weight:normal;
+}
+h3 {
+  font-size: 100%;
+  font-weight: bold;
+  font-style: italic;
+  color:brown;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  text-align: center;
+  page-break-after: avoid; 
+}
+h2 {
+  font-size: 110%;
+  color:indigo;
+  font-weight: bold;
+  margin-top: .7em;
+  margin-bottom: 0;
+  text-align: center;
+  page-break-after: avoid;
+   }
+}
+
+/* CSS media queries to create the page for mobile devices */
+
+/* 320px and up
+-- It's for the iPhone, iPod touch and other Adroid
+-- and mobile phones in portrait mode */
+@media only screen and (min-width: 320px) {
+  p {
+  background: lightcoral;
+     color: blue;
+     font-size: 10pt;
+    }
+    h3{
+      background: blue;
+      text-align:center;
+      color:green;
+    }
+    h2{
+      background: red;
+      text-align:center; 
+      color:yellow;
+    }
+}
+
+/* 480px and up
+-- It's for larger mobile phones such as HTC models
+-- and iPhone in landscapemode */
+@media only screen and (min-width: 480px) {
+  p {
+    background: cornsilk;
+     color: green;
+     font-size: 16pt;
+    }
+     h3{
+      background: yellow;
+      text-align:center;
+      color:blue;
+    }
+    h2{
+      background: palegreen;
+      text-align:center; 
+      color:red;
+    }
+  }
+
+/* From 600px-767px, not beyond
+-- It's for resizing a desktop browser */
+@media only screen and (min-width: 600px)
+and (max-width: 767px)
+{
+  p {
+    background: lightcyan;
+     color: brown;
+     font-size: 14pt;
+    }
+     h3{
+      background: yellow;
+      text-align:center;
+      color:orange;
+    }
+    h2{
+      background: bisque;
+      text-align:center; 
+      color:indigo;
+    }
+}
+
+
+/* 768px and up
+-- This is for desktops, iPads and other tablets */
+@media only screen and (min-width: 768px) {
+  p {
+background: mistyrose;
+     color: mediumorchid;
+     font-size: 12pt;
+    }
+     h3{
+       background: lavender;
+      text-align:center;
+      color:darkgoldenrod;
+    }
+    h2{
+       background: palegreen;
+      text-align:center; 
+      color:chocolate;
+    }
+}
+
+
+
+</style>
+</head>
+<body>
+   <header>
+      <h2> Lab17 - Print Media and Mobile Devices</h2>
+<h3> Possible Risks of using a Wi-Fi hotspot</h3>
+</header>
+<p>
+WiFi signals are radio waves, anyone within range of a public WiFi network can listen in on what users are sending and receiving. Unlike home WiFi networks, the vast majority of public WiFi hotspots don't encrypt the data being transmitted through them. Therefore, when you connect to a hotspot, everything from your email and your bank account and credit card information to your social media content may be fair game for hackers. Below mentioned are some of the possible risks of using a Wi-Fi hotspot and a possible precaution for that.
+</p>
+
+<p>
+
+<b>Sniffer software :</b> Allows a hacker to monitor the traffic traveling to and from a computer that's connected to a public network. This is the most basic kind of attack and can eavesdrop on emails and chats, capturing log-ins and personal or financial information. A hotspot user will never suspect their information has been compromised. <br>
+ <b>Precaution: </b>Before you log in to any hotspot, make sure your firewall is turned on, and your virus and malware protection is up to date. After you log out of a hotspot, it's a good idea to scan your laptop or mobile device for viruses and malware.<br><br>
+
+<b>Address Resolution Protocolor ARP Spoofing: </b>This method redirects the network traffic to the hacker, modifying it or blocking it altogether without being detected. ARP spoofing is often used to open the door for other kinds of attacks such as sidejacking.<br>
+
+<b>Sidejackingor session hijacking: </b>This happens when a hacker sniffs a hotspot user's Web session. That information is used it to clone the user's account, allowing the hacker to do anything the user can do while logged into a website. Sidejacking typically happens when users type in their user names and passwords when connecting to a website not properly protected by https<br>
+<b>Precaution: </b>1. Use unique passwords for every website, composed of at least 12 upper and lower case letters, numbers and symbols. Never store passwords on your laptop or mobile devices.<br>
+2. Only use websites that are encrypted – ones that begin with https, not http, and display a security icon such as a padlock. This will protect any confidential information you exchange with those sites at hotspots.<br><br>
+
+<b>Evil Twins:</b>Hackers and/or cybercriminals create Evil Twin hotspots to allow them to both eavesdrop on network traffic and insert themselves into the data conversation between the victims and the servers that the victims access while connected to the Evil Twin hotspot.
+By imitating a legitimate hotspot and tricking users into connecting to it, a hacker or cybercriminal can then steal account names and passwords and redirect victims to malware sites, phishing sites, etc.The perpetrators can also view the contents of files that the victims download or upload while they are connected to the Evil Twin access point.<br>
+<b>Precaution: </b>One of the ways suggested by the Wi-Fi Alliance to protect yourself from Evil Twin access points is to use a Virtual Private Network (VPN). Using the encrypted tunnel provided by the VPN encryption process helps to secure all traffic between your VPN-capable device and the VPN server.<br><br>
+
+<b>Man-in-the-Middle Attack: </b> Which allows it to eavesdrop on Internet traffic and capture passwords and account and payment information. More sophisticated Evil Twins can even control which websites appear.<br>
+<b>Precaution: </b>Before you log into a hotspot, turn off file and printer sharing features so that others on the same network won't be able to access your personal information<br><br>
+
+<b>Ad hoc or peer-to-peer network: </b> Another sign you could be in for trouble - Two little computer symbols that appear when you're trying to connect to a wireless network. That means you're connecting to someone else's laptop – an ad hoc or peer-to-peer network, not a WiFi hotspot. Once you connect to a viral network like that, your shared files can be accessed by every other laptop connected to the network.<br>
+<b>Precaution: </b>Check with the hotspot vendor to ensure the network you're connecting to is the real one, not a fake designed to steal your personal information. Some rogue networks have names that closely resemble those of real hotspots. So make sure to check the spelling.<br><br>
+
+<b>Rogue ad hoc networks:</b> With names like "Free Public WiFi," these networks can turn up wherever there are public WiFi hotspots and can be used to trick unsuspecting WiFi users into connecting to them. Not all ad hoc networks are created by hackers. But it's impossible to distinguish the real ones from the fakes. So to be safe, you should steer clear of them all. WiFi users whose laptops were hacked at airport, hotel and coffee house hotspots have filed complaints with the Federal Trade Commission and the Better Business Bureau. Here's what you can do to protect your sensitive information at WiFi hotspots.<br>
+<b>Precaution: </b>Adjust your laptop and mobile devices to disable any settings that automatically connect to any available network. This will prevent you from connecting to those rogue ad hoc or peer-to-peer networks which could expose your personal information. <br><br>
+</p>
+<h3>Precautions to surf safely using a Wi-Fi hotspot </h3>
+<p>
+I have used a Wi-Fi hotspot manytimes, but i didn't face any risks. I will take below mentioned precaustions of the settings and apps which can keep anyone to surf safely using a Wi-Fi hotspot. Make sure these are enabled anytime you're on public Wi-Fi, whether it's password protected or not. If other people you don't know are on the same network, you want to protect yourself.<br>
+1. Turn Off Sharing<br>
+2. Enable Your Firewall<br>
+3. Use HTTPS and SSL Whenever Possible<br>
+4. Consider Using a Virtual Private Network<br>
+5. Turn Wi-Fi Off When You Aren't Using It<br>
+6. Ensure that your software is up to date.<br>
+7. Use encrypted hotspots. <br>
+8. Don’t connect to ad hoc connections<br><br>
+
+<b>Useful Links:</b><br>
+<a href="http://www.intelfreepress.com/news/top-10-safety-tips-for-wi-fi-hotspots/2329/">Top 10 Safety Tips for Wi-Fi Hotspots</a> <br>
+<a href="https://en.wikipedia.org/wiki/Hotspot_(Wi-Fi)">Wiki Link for Wi-Fi Hotspot</a>
+</p>
+
+
+<aside style="float:right"><p> <b>Research evil twins and other possible risks you can think of related to using a Wi-Fi hotspot. For each risk, identify a possible precaution that can be taken to guard against that risk. If you have ever used a Wi-Fi hotspot, were you at risk? Knowing what you do now, would you take any new precautions the next time you use one? Is it possible to surf safely using a Wi-Fi hotspot?<br>
+
+Did the following:</b> <br>
+
+
+Use CSS for printing and making links printable (the URL show up when printing, but do not when displayed on the screen. A URL is something like http://www.cnn.com. When you have a link to CNN such as CNN, that;s what you see on the display CNN. Whn you print it you only see CNN printed. I want you to also print the whole URL http://www.cnn.com such as CNN (http://www.cnn.com) printed.).<br>
+Use viewport meta tag and CSS media queries to create the page for mobile devices. Show the differences in background color and font color and size with different screen sizes.</p></aside>
+</body>
+</html>

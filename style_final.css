@@ -1,0 +1,128 @@
+body{background:url(midterm-background.jpg); font-family: 'Times New Roman'; width:100%;}
+
+
+
+#circle {
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+      position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -200px;
+box-shadow: 1px 2px 2px 8px yellow, -2px -5px 60px 30px red;
+ background: -webkit-radial-gradient(left, circle,yellow 5%, red 400%);
+background: -moz-radial-gradient(left, circle, yellow 5%, red 400%);
+background: -o-radial-gradient(left, circle, yellow 5%, red 400%);
+background: -ms-radial-gradient(left, circle, yellow 5%, red 400%);
+background: radial-gradient(left, circle, yellow 5%, red 400%);
+-webkit-transition: all 2s ease-in;
+-moz-transition: all 2s ease-in;
+-o-transition: all 2s ease-in;
+transition: all 2s ease-in;
+
+}
+
+#x:hover  #circle{
+  background:url(Hyderabad2.jpg);
+border-radius: 10%;
+border:1px red;
+width: 1200px;
+height: 500px;
+margin: -250px 0 0 -600px;
+opacity: 1;
+transition: 2s;
+}
+
+#x + #box:hover #circle{
+   background:url(Hyderabad2.jpg);
+border-radius: 10%;
+border:1px red;
+width: 1200px;
+height: 500px;
+margin: -250px 0 0 -600px;
+opacity: 1;
+transition: 2s;
+}
+
+#box p
+{
+  opacity:0;
+}
+
+#box:hover p{
+color:white;
+padding:10px;
+margin: 5px;
+    opacity:1;
+
+}
+
+#x + #box:hover p{
+  color:white;
+padding:10px;
+margin: 5px;
+    opacity:1;
+}
+
+
+#circle p:first-of-type{
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30%;
+  right: 0;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  font-family: Verdana;
+ font-size: 3em;
+ color:red;
+}
+
+#circle p:nth-of-type(2){
+	position: absolute;
+  top: 5%;
+  bottom: 0;
+  left: 60%;
+  right: 0;
+  color: blue;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 4em;
+  font-family: 'Times New Roman';
+  text-shadow: 5px 5px 5px pink;
+}
+
+
+#x:hover  #circle p:first-of-type{
+  visibility: visible;
+  opacity: 1; }
+
+#x:hover  #circle p:nth-of-type(2){
+  visibility: visible;
+  opacity: 1; }
+
+#x + #box:hover #circle p:first-of-type{
+    visibility: visible;
+  opacity: 1; 
+}
+
+#x + #box:hover #circle p:nth-of-type(2){
+    visibility: visible;
+  opacity: 1; 
+}
+#box {
+    width: 100%;
+    height:40%;
+      position: fixed;
+  top: 60%;
+  right:0;
+  bottom:0;
+  left:0;
+  background:url(box_image.jpg);
+
+}
+
+
+

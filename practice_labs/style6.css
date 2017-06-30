@@ -1,0 +1,5 @@
+.style6Class{background-color:  yellow; color: green; font-family: 'Times New Roman'; }
+#style6Id {font-size: 14pt; font-style: italic; font-weight: 300;}
+a{background-color: cyan; color: red; font-family: Verdana;}
+a:hover { color: purple; }
+h1{background-color: green; text-align:center; color: pink}
